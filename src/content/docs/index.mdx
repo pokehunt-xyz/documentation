@@ -1,36 +1,40 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to PokéHunt
+description: The landing page for the documentation
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: The Best Pokémon experience on Discord and Telegram
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/pokehunt.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: How to start
+      link: /guides/start
       icon: right-arrow
-    - text: Read the Starlight docs
+    - text: View commands
       link: https://starlight.astro.build
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 ## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+	<LinkCard
+		title="Invite the bot to your Discord server"
+		href="https://pokehunt.xyz/invite-discord">
+	</LinkCard>
+	<LinkCard
+		title="Invite the bot to your Telegram group"
+		href="https://pokehunt.xyz/invite-telegram">
+	</LinkCard>
+	<LinkCard
+		title="Join the Discord server"
+		href="https://pokehunt.xyz/support-discord">
+	</LinkCard>
+	<LinkCard
+		title="Join the Telegram group"
+		href="https://pokehunt.xyz/support-telegram">
+	</LinkCard>
 </CardGrid>
