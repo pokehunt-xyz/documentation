@@ -1,13 +1,17 @@
 {
   "name": "pokehunt-documentation",
+  "version": "3.3.0",
+  "description": "The official Pokehunt Documentation",
+  "repository": "https://github.com/pokehunt-xyz/documentation.git",
+  "author": "Pokehunt Team <support [at] pokehunt.xyz>",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "dev": "astro telemetry disable; astro dev",
+    "start": "astro telemetry disable; astro dev",
+    "build": "astro telemetry disable; astro build",
+    "preview": "astro telemetry disable; astro preview",
+    "astro": "astro telemetry disable; astro",
     "update-deps": "npx npm-check-updates -u && npm install && npm audit fix"
   },
   "dependencies": {
