@@ -1,7 +1,7 @@
 {
   "name": "pokehunt-documentation",
   "version": "3.3.0",
-  "description": "The official Pokehunt Documentation",
+  "description": "The official PokéHunt Documentation",
   "repository": "https://github.com/pokehunt-xyz/documentation.git",
   "author": "Pokehunt Team <support [at] pokehunt.xyz>",
   "license": "AGPL-3.0-or-later",
@@ -12,11 +12,19 @@
     "build": "astro telemetry disable; astro build",
     "preview": "astro telemetry disable; astro preview",
     "astro": "astro telemetry disable; astro",
+    "eslint": "npx eslint src --report-unused-disable-directives",
     "update-deps": "npx npm-check-updates -u && npm install && npm audit fix"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.34.3",
     "astro": "^5.8.1",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1"
   }
 }
