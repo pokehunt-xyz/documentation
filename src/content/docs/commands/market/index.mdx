@@ -3,10 +3,22 @@ title: Market
 description: View, manage, find and buy market Pokémon
 ---
 
-If you are looking for a Pokémon to buy, use \`/market search\` (and use the filters) to find a Pokémon you want.
-After finding the Pokémon you want, use \`/market view\` to view the Pokémon in detail.
-If you like the Pokémon and want to buy it, use \`/market buy\` to buy it.
+import { Steps } from '@astrojs/starlight/components';
 
-If you want to sell your Pokémon, use \`/market create\` to sell your Pokémon.
-You can set the price and the Pokémon will be listed on the market for other players to buy.
-To view all your Pokémon for sale on the market, use \`/market listings\`!
+# Buying
+
+<Steps>
+
+1. First find a Pokémon you want to buy using [/market search](/commands/market/search)
+
+2. Then use [/market view](/commands/market/view) to see details about this Pokémon
+
+3. If you wish to buy it, use [/market buy](/commands/market/buy)
+
+</Steps>
+
+# Selling
+
+To sell your Pokémon use [/market create](/commands/market/create) and set a fixed price.
+
+To view all your Pokémon listed for sale, use [/market listings](/commands/market/listings).

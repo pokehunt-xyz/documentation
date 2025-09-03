@@ -3,11 +3,25 @@ title: Auction
 description: View, manage, find and bid (on) auctions
 ---
 
-Unlike market, auction works by bidding on Pokémon. It ends after a certain time or after the bid goal is reached.
-If you are looking for a Pokémon to buy, use \`/auction search\` (and use the filters) to find a Pokémon you want.
-After finding the Pokémon you want, use \`/auction view\` to view the Pokémon in detail.
-If you like the Pokémon want to bid on it, use \`/auction bid\` to bid on it.
+import { Steps } from '@astrojs/starlight/components';
 
-If you want to sell your Pokémon, use \`/auction create\` to sell your Pokémon.
-You can set the duration and the Pokémon will be listed on the auction for other players to bid.
-To view all your Pokémon for sale on the auction, use \`/auction listings\`!
+Unlike market, auction works by bidding on Pokémon. It ends after a certain time or after the bid goal is reached.
+
+
+# Buying
+
+<Steps>
+
+1. First find a Pokémon you want to buy using [/auction search](/commands/auction/search)
+
+2. Then use [/auction view](/commands/auction/view) to see details about this Pokémon
+
+3. To place your bid use [/auction bid](/commands/auction/bid)
+
+</Steps>
+
+# Selling
+
+To sell your Pokémon use [/auction create](/commands/auction/create) and set the duration for bidding.
+
+To view all your Pokémon listed in auctions, use [/auction listings](/commands/auction/listings).
