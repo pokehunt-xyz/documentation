@@ -2,3 +2,21 @@
 title: Auction create
 description: Create an auction for your Pokémon
 ---
+
+Use the command /auction create <id> [minimumBid] to put one of your Pokémon on auction.
+
+<id>: The Pokémon you want to auction. You can use -1 for your latest Pokémon, 0 for the selected Pokémon, or the specific Pokémon’s ID.
+
+[minimumBid] (optional): The minimum credits required to start bidding. If not specified, the default minimum bid applies.
+
+Note: The auction duration is fixed at 1 day and 12 hours (36 hours) and cannot be changed.
+
+Example commands:
+
+/auction create -1 22 , 
+Puts your latest Pokémon on auction with a minimum bid of 22 credits.
+
+/auction create 0 50 , 
+Puts your selected Pokémon on auction with a minimum bid of 50 credits.
+
+The auction allows other players to place bids. After the duration ends, the highest bidder wins the Pokémon.
