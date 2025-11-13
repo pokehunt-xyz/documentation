@@ -3,12 +3,19 @@ title: Auction bid
 description: Bid for a Pokémon on auction
 ---
 
-To place a bid on a Pokémon auction, use the command:
-/auction bid \<auctionID\> \<amount\> , 
+Using this command you can bid on a Pokémon that is listed on the auction.
 
-\<auctionID\>: The unique ID of the auction you want to bid on.
-\<amount\>: The amount of credits you want to bid.
+# Command Usage
 
-For example:
-/auction bid d9b 100 , 
-This bids 100 credits on the auction with ID d9b.
+```
+/auction bid \<auctionID\> \<amount\>
+```
+
+# Parameters
+
+- `auctionID` (required): The unique ID of the auction you want to bid on.
+- `amount` (required): The amount of credits you want to bid.
+
+# Examples
+
+- `/auction bid d9b 100`: bid 100 credits on auction with ID d9b

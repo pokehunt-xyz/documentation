@@ -1,15 +1,29 @@
 ---
 title: Auction create
-description: Create an auction for your Pokémon
+description: Put your Pokémon on auction
 ---
 
-Use the command /auction create \<id\> [minimumBid] to put one of your Pokémon on auction.
+Using this command you can list your Pokémon for sale on the auction
 
-\<id\>: The Pokémon you want to auction. You can use -1 for your latest Pokémon, 0 for the selected Pokémon, or the specific Pokémon’s ID.
+# Command Usage
 
-[minimumBid] (optional): The minimum credits required to start bidding. If not specified, the default minimum bid applies.
+```
+/auction create \<pokeID\> [insta] [hours]
+```
 
-Note: The auction duration is fixed at 1 day and 12 hours (36 hours) and cannot be changed.
+# Parameters
+
+- `pokeID` (required): The ID of the Pokémon you want to put on the auction
+- `insta` (optional): If this amount of credits is reached, do not wait for the duration to end but instantly sell it
+- `hours` (optional): the duration (in hours) for the auction (Discord only). On telegram it is fixed at 36 hours
+
+# Examples
+
+- `/auction create -1`: Put your latest Pokémon on the auction
+- `/auction create BulbaGoat`: Put tbe Pokémon with nickname BulbaGoat on the auction
+- `/auction create 0 hours:48`: Put your selected Pokémon on the auction for 2 days
+- `/auction create 2 insta:1000`: Put your second Pokémon on the auction, automatically end the auction when someone bids more than 1,000
+		
 
 Example commands:
 
